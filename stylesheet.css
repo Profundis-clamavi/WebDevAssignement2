@@ -1,0 +1,43 @@
+.ui-content {
+    text-align: center;
+}
+
+.square {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    padding: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.rectangle {
+    display: flex;
+    width: 100px;
+    height: 20px;
+    padding: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#selectable .ui-selecting {
+    background: #feca40;
+}
+
+#selectable .ui-selected {
+    background: #f39824;
+    color: white;
+}
+
+#accordion_item {
+    padding-bottom: 30px;
+}

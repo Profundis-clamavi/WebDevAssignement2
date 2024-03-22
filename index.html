@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vecta corp</title>
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+
+    <link rel="stylesheet" href="themes/my-theme.min.css" />
+
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="stylesheet.css" />
+
+    <script src="javaScript.js"></script>
+</head>
+
+<body>
+    <div class="pg" data-role="page" id="Interactions">
+        <header data-role="header">
+            <h1>This Page has Part A</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#Interactions" data-icon="home" class="ui-btn-active ui-state-persist"
+                            data-theme="b">Interactions</a>
+                    </li>
+                    <li><a href="#Widgets" data-icon="grid" data-theme="b">Widgets</a></li>
+                    <li><a href="#Effects" data-icon="star" data-theme="b">Effects</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="ui-content" role="main">
+            <div id="draggable" class="ui-widget-content square">
+                <p>draggable</p>
+            </div>
+            <div id="droppable" class="ui-widget-content square">
+                <p>droppable</p>
+            </div>
+            <div id="resizable" class="ui-widget-content square">
+                <p>resizable</p>
+            </div>
+            <p>selectable items</p>
+            <ul id="selectable">
+                <li class="ui-widget-content rectangle">item 1</li>
+                <li class="ui-widget-content rectangle">item 2</li>
+                <li class="ui-widget-content rectangle">item 3</li>
+                <li class="ui-widget-content rectangle">item 4</li>
+            </ul>
+        </section>
+        <footer data-role="footer">
+            <h4>&copy; Nathaniel Yeo 2024</h4>
+        </footer>
+    </div>
+    <!-- widgets Page -->
+    <div class="pg" data-role="page" id="Widgets">
+        <header data-role="header">
+            <h1>This page has part B</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#Interactions" data-icon="home" data-theme="b">Interactions</a></li>
+                    <li><a href="#Widgets" data-icon="grid" class="ui-btn-active ui-state-persist"
+                            data-theme="b">Widgets</a></li>
+                    <li><a href="#Effects" data-icon="star" data-theme="b">Effects</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section data-role="content">
+            <div id="accordion">
+                <h3>part 1</h3>
+                <div id="accordion_item">A Little bit of content</div>
+                <h3>part 2</h3>
+                <div id="accordion_item">some more content</div>
+
+            </div>
+            <h2>Pick a pet(cat or dog etc...)</h2>
+            <div class="autocomlete">
+                <p>Autocomlete:<input id="autocomplete"></p>
+            </div>
+            <h2>Datepicker widget</h2>
+            <p>Date<input type="text" id="datepicker"></p>
+
+            <div id="slider"></div>
+            <p>Slider Value: <span id="amount">0</span></p>
+
+
+
+            <a href="#" data-role="button" data-rel="back" data-icon="back" data-theme="b"> Back </a>
+        </section>
+        <footer data-role="footer">
+            <h4>&copy; Nathaniel Yeo 2024</h4>
+        </footer>
+    </div>
+    <!-- Effects Page -->
+    <div class="pg" data-role="page" id="Effects">
+        <header data-role="header">
+            <h1>This page has part C</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#Interactions" data-icon="home" data-theme="b">Interactions</a></li>
+                    <li><a href="#Widgets" data-icon="grid" data-theme="b">Widgets</a></li>
+                    <li><a href="#Effects" data-icon="star" class="ui-btn-active ui-state-persist"
+                            data-theme="b">Effects</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section data-role="content">
+            <div id="target" class="square">Target Element</div>
+            <button id="hide">Hide</button>
+            <button id="show">Show</button>
+            <button id="explode">Explode</button>
+            <button id="fadeIn">Fade In</button>
+            <button id="fadeOut">Fade Out</button>
+            <button id="changeColour">Change Color</button>
+            <a href="#" data-role="button" data-rel="back" data-icon="back" data-theme="b"> Back </a>
+        </section>
+        <footer data-role="footer">
+            <h4>&copy; Nathaniel Yeo 2024</h4>
+        </footer>
+    </div>
+</body>
+
+</html>
